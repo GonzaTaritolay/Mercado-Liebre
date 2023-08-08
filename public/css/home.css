@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+    background-color: #ebebeb;
+    
+}
+/****************TODO LO QUE ES HEADER****************/
+#header{
+    font-size:12px;
+    width: 100vw;
+    padding: 10px;
+    background-color: #EAC926;
+}
+.contenedorLogo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#logo{
+    margin: 15px;
+    width: 50%;
+}
+#busqueda{
+    width: 50%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 15px;
+}
+#compra_en_cuotas{
+    text-align: center;
+    font-size: 13px;
+    margin: 15px;
+}
+#compra_en_cuotas i{
+    margin-right: 3px;
+}
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li{
+    margin-bottom: 4px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a i{
+    margin-left: 3px;
+}
+.burger-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.burger-menu #icon{
+    background-color:#1259c3;
+    color: white;
+    padding: 10px ; 
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#banner{
+    width: 100vw;
+}
+/***************TODO LO QUE ES MAIN*******************/
+
+#main{
+    text-align: center;
+    width: 90vw;
+    margin: auto ;
+}
+
+#articulo{
+    width: 90vw;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+#ultVisita,#ofertas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+p{
+    font-size: 24px;
+    color: #666;
+    margin: 15px;
+    font-weight: bold;
+}
+.renglon{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: -15px;
+    border-top: 1px solid #ebebeb;
+    padding-top: 20px;
+}
+
+#precio{
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+}
+#descuento{
+    width: 70%;
+    text-align: start;
+    font-size: 18px;
+    color:#39b54a;
+}
+#descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px ;
+    font-size: 20px; 
+    color: #666;
+    
+}
+.camion{
+    position: relative;
+    top:15px;
+    z-index: 10;
+    text-align: end;
+}
+#iconoSection{
+    padding: 5px;
+    color:#39b54a;
+    border-radius: 50%;
+    border: solid 1px green;
+    background-color: #fff;
+    
+}
+
+/********************TODO LO QUE ES FOOTER*******************/
+footer{
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    color: #666;      
+}
+footer section h7{
+    color: black;
+    margin-bottom: 5px;
+}
+
+#iconoFooter{
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:#1259c3;
+}
+
+
+
+
+
+
+
+
+
+
+/**************MEDIA QUERIES*************************/
+
+/*MOVIL*/
+@media(max-width: 460px){
+     nav{
+        display: none;
+    }
+    .renglon{
+        width: 90vw;
+    }
+}
+
+
+
+/*TABLET*/
+@media(min-width:460px){
+    #articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .renglon{
+        width: 36vw;
+        
+    }
+    #descuento{
+        text-align: center;
+    } 
+    .burger-menu{
+        display: none;
+    }
+    .contenedorLogo2{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    nav ul li{
+        margin-left: 15px;
+    }
+    p{
+        text-align: start;
+    }
+}
+
+
+/*PC*/
+@media(min-width:769px){
+    #articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+    .renglon{
+        width: 18vw;
+    }
+    #descuento{
+        text-align: center;
+    } 
+    .burger-menu{
+        display: none;
+    }.contenedorLogo{
+        width: 66vw;
+    }
+    .contenedorLogo2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    nav ul li{
+        margin-left: 15px;
+    }
+    p{
+        text-align: start;
+    }
+}

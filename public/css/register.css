@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#EAC926;
+    margin-top: 15px;
+}
+.container {
+    background-color: #39b54a;;
+    border-radius:  5px;
+    border: 1px solid rgb(119, 111, 111);
+    width:50vw;
+    margin: auto;
+  }
+.boton {
+      text-align: center;
+      margin-bottom: 20px;
+}
+
+.form-titulo {
+      font-weight:bolder;
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: 40px;
+}
+#intereses{
+    display: flex;
+    flex-direction: column;
+}
+#intereses h3{
+    margin: 10px;
+}
+#intereses label{
+    margin:5px 20px;
+}
+label{
+    margin-left: 10px;
+}
+input[type="text"],input[type="email"],input[type="password"],input[type="date"] {
+      width:60%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+}
+button[type="submit"], button[type="reset"] {
+    margin-top: 15px;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 25px;
+    border: 1px solid #1259c3 ;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#home{
+    text-decoration: none;
+    color:#ffffff
+}
+@media(max-width:460px){
+    .container{
+        width: 90vw;
+    }
+}

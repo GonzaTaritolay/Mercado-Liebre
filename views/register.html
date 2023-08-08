@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9289510efb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/register.css">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="get">
+            <h1 class="form-titulo">Registro</h1>
+            <div class="input">
+                <label for="nombre">Nombre:
+                    <input type="text" id="nombre" name="nombre" required>
+                </label>
+            </div>
+            <div>
+                <label for="apellido">Apellido:
+                    <input type="text" id="apellido" name="apellido" required>
+                </label> 
+            </div>
+            <div>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required>
+                </label>
+            </div>
+            <div>
+                <label for="contrasenia">Contraseña
+                    <input type="password" id="contrasenia" required>
+                </label>
+            </div>
+            <div>
+                <label for="direccion">Dirección:
+                    <input type="text" id="direccion" name="direccion" required>
+                </label>
+            </div>
+            <div>
+                <label for="">Fecha de Nacimiento
+                    <input type="date" value="" required>  
+                </label>    
+            </div>
+            <div id="intereses"><h3>Perfil de usuario</h3>
+                <label for="user">Comprador
+                    <input type="radio" name="user" required>
+                </label>
+                <label for="user">Vendedor
+                    <input type="radio" name="user" required>
+                </label>
+            </div>
+            <div id="intereses"><h3>Intereses</h3>
+                <label for="electro">Electro
+                    <input type="checkbox" name="electro" id="Electro" required>
+                </label>
+                <label for="moda">Moda
+                    <input type="checkbox" name="moda" id="Moda" required>
+                </label>
+                <label for="hogar">Hogar
+                    <input type="checkbox" name="hogar" id="Hogar" required>
+                </label>
+                <label for="jugueteria">Jugueteria
+                    <input type="checkbox" name="jugueteria" id="Jugueteria" required>
+                </label>
+                <label for="vida sana">Vida sana
+                    <input type="checkbox" name="vida sana" id="Vida sana" required>
+                </label>
+            </div>
+            <div class="boton">
+                <button type="submit"><a id="home" href="/">Enviar</a></button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
